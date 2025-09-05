@@ -93,82 +93,84 @@
                     <h2>Request Your Free Quote</h2>
                     <p>Fill out the form below and we'll get back to you with a competitive quote within 24 hours.</p>
                 </div>
-                <form class="quote-form" action="https://formspree.io/f/xblapbgr" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company Name</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="service">Service Required *</label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option value="container-sales">Container Sales</option>
-                                <option value="container-rentals">Container Rentals</option>
-                                <option value="cabotage-services">Cabotage Services</option>
-                                <option value="consultation">Consultation</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="timeline">Required Timeline</label>
-                            <select id="timeline" name="timeline">
-                                <option value="">Select timeline</option>
-                                <option value="asap">ASAP</option>
-                                <option value="1-week">Within 1 week</option>
-                                <option value="1-month">Within 1 month</option>
-                                <option value="3-months">Within 3 months</option>
-                                <option value="flexible">Flexible</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Delivery Location</label>
-                        <input type="text" id="location" name="location" placeholder="City, Area, or Full Address">
-                    </div>
-                    <div class="form-group">
-                        <label for="requirements">Project Requirements *</label>
-                        <textarea id="requirements" name="requirements" rows="5" placeholder="Please describe your container needs, including size requirements, quantity, duration (for rentals), and any special requirements..." required></textarea>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="newsletter" value="yes">
-                            <span class="checkmark"></span>
-                            I would like to receive updates about container solutions and industry news
-                        </label>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="terms" value="yes" required>
-                            <span class="checkmark"></span>
-                            I agree to the terms and conditions and privacy policy *
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-large">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Quote Request
-                    </button>
-                </form>
+                Updated Contact Form with Name Attributes:
+
+<form class="quote-form" action="https://formspree.io/f/xblapbgr" method="POST">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="first_name" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="last_name" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company">
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="service">Service Required *</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="container-sales">Container Sales</option>
+                <option value="container-rentals">Container Rentals</option>
+                <option value="cabotage-services">Cabotage Services</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="timeline">Required Timeline</label>
+            <select id="timeline" name="timeline">
+                <option value="">Select timeline</option>
+                <option value="asap">ASAP</option>
+                <option value="1-week">Within 1 week</option>
+                <option value="1-month">Within 1 month</option>
+                <option value="3-months">Within 3 months</option>
+                <option value="flexible">Flexible</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="location">Delivery Location</label>
+        <input type="text" id="location" name="delivery_location" placeholder="City, Area, or Full Address">
+    </div>
+    <div class="form-group">
+        <label for="requirements">Project Requirements *</label>
+        <textarea id="requirements" name="requirements" rows="5" placeholder="Please describe your container needs, including size requirements, quantity, duration (for rentals), and any special requirements..." required></textarea>
+    </div>
+    <div class="form-group checkbox-group">
+        <label class="checkbox-label">
+            <input type="checkbox" name="newsletter" value="yes">
+            <span class="checkmark"></span>
+            I would like to receive updates about container solutions and industry news
+        </label>
+    </div>
+    <div class="form-group checkbox-group">
+        <label class="checkbox-label">
+            <input type="checkbox" name="terms" value="yes" required>
+            <span class="checkmark"></span>
+            I agree to the terms and conditions and privacy policy *
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-large">
+        <i class="fas fa-paper-plane"></i>
+        Send Quote Request
+    </button>
+</form>
             </div>
         </div>
     </section>
@@ -341,3 +343,4 @@
 </body>
 
 </html>
+
