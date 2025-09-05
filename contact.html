@@ -3,51 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Apogee Container Solutions | Get Your Free Quote Today</title>
-    <meta name="description" content="Contact Apogee Container Solutions for container sales, rentals, and cabotage services. Get your free quote today. Located in Pinetown, serving all of KwaZulu-Natal.">
+    <title>Contact Us - Apogee Container Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">
-                        <h1>APOGEE</h1>
-                        <span>Container Solutions</span>
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li><a href="index.html#about" class="nav-link">About</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                    <li><a href="#quote-form" class="nav-link cta-button">Get Quote</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Apogee Container Solutions</h2>
             </div>
-        </nav>
-    </header>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Contact Hero -->
+    <!-- Contact Hero Section -->
     <section class="contact-hero">
         <div class="container">
-            <div class="contact-hero-content">
-                <h1>Get Your Free Quote Today</h1>
-                <p>Ready to discuss your container needs? Our team is here to provide expert guidance and competitive pricing for all your container solutions.</p>
+            <div class="hero-content">
+                <h1>Get Your Container Quote</h1>
+                <p class="hero-subtitle">Professional container solutions tailored to your needs. Get in touch with our experts today.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Methods -->
-    <section class="contact-methods">
+    <!-- Contact Information -->
+    <section class="contact-info">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-card">
@@ -55,122 +56,114 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3>Call Us</h3>
-                    <p>Speak directly with our container experts</p>
-                    <a href="tel:+27123456789" class="contact-link">+27 (0)31 XXX-XXXX</a>
-                    <span class="availability">Available Mon-Fri 8AM-5PM</span>
+                    <p>+27 31 700 5000</p>
+                    <p class="contact-note">Available 24/7 for emergencies</p>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3>Email Us</h3>
-                    <p>Send us your requirements for a detailed quote</p>
-                    <a href="mailto:info@apogeecontainers.co.za" class="contact-link">info@apogeecontainers.co.za</a>
-                    <span class="availability">Response within 2 hours</span>
+                    <p>info@apogeecontainers.co.za</p>
+                    <p class="contact-note">Response within 2 hours</p>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>Visit Us</h3>
-                    <p>Come see our container inventory in person</p>
-                    <address class="contact-link">
-                        15A Truman Road, The Manors<br>
-                        Pinetown, Durban 3610<br>
-                        KwaZulu-Natal, South Africa
-                    </address>
-                    <span class="availability">By appointment preferred</span>
+                    <p>15A Truman Road, The Manors</p>
+                    <p>Pinetown, Durban 3610</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quote Form -->
-    <section id="quote-form" class="quote-form-section">
+    <!-- Quote Request Form -->
+    <section class="quote-section">
         <div class="container">
-            <div class="form-content">
-                <div class="form-header">
-                    <h2>Request Your Free Quote</h2>
-                    <p>Fill out the form below and we'll get back to you with a competitive quote within 24 hours.</p>
+            <div class="quote-content">
+                <div class="quote-header">
+                    <h2>Request a Quote</h2>
+                    <p>Fill out the form below and we'll get back to you with a competitive quote within 2 hours.</p>
                 </div>
-                Updated Contact Form with Name Attributes:
-
-<form class="quote-form" action="https://formspree.io/f/xblapbgr" method="POST">
-    <div class="form-row">
-        <div class="form-group">
-            <label for="firstName">First Name *</label>
-            <input type="text" id="firstName" name="first_name" required>
-        </div>
-        <div class="form-group">
-            <label for="lastName">Last Name *</label>
-            <input type="text" id="lastName" name="last_name" required>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number *</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="company">Company Name</label>
-        <input type="text" id="company" name="company">
-    </div>
-    <div class="form-row">
-        <div class="form-group">
-            <label for="service">Service Required *</label>
-            <select id="service" name="service" required>
-                <option value="">Select a service</option>
-                <option value="container-sales">Container Sales</option>
-                <option value="container-rentals">Container Rentals</option>
-                <option value="cabotage-services">Cabotage Services</option>
-                <option value="consultation">Consultation</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="timeline">Required Timeline</label>
-            <select id="timeline" name="timeline">
-                <option value="">Select timeline</option>
-                <option value="asap">ASAP</option>
-                <option value="1-week">Within 1 week</option>
-                <option value="1-month">Within 1 month</option>
-                <option value="3-months">Within 3 months</option>
-                <option value="flexible">Flexible</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="location">Delivery Location</label>
-        <input type="text" id="location" name="delivery_location" placeholder="City, Area, or Full Address">
-    </div>
-    <div class="form-group">
-        <label for="requirements">Project Requirements *</label>
-        <textarea id="requirements" name="requirements" rows="5" placeholder="Please describe your container needs, including size requirements, quantity, duration (for rentals), and any special requirements..." required></textarea>
-    </div>
-    <div class="form-group checkbox-group">
-        <label class="checkbox-label">
-            <input type="checkbox" name="newsletter" value="yes">
-            <span class="checkmark"></span>
-            I would like to receive updates about container solutions and industry news
-        </label>
-    </div>
-    <div class="form-group checkbox-group">
-        <label class="checkbox-label">
-            <input type="checkbox" name="terms" value="yes" required>
-            <span class="checkmark"></span>
-            I agree to the terms and conditions and privacy policy *
-        </label>
-    </div>
-    <button type="submit" class="btn btn-primary btn-large">
-        <i class="fas fa-paper-plane"></i>
-        Send Quote Request
-    </button>
-</form>
+                
+                <form class="quote-form" action="https://formspree.io/f/xblapbgr" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="last_name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="container-sales">Container Sales</option>
+                                <option value="container-rentals">Container Rentals</option>
+                                <option value="cabotage-services">Cabotage Services</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Required Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-week">Within 1 week</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="3-months">Within 3 months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Delivery Location</label>
+                        <input type="text" id="location" name="delivery_location" placeholder="City, Area, or Full Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="requirements">Project Requirements *</label>
+                        <textarea id="requirements" name="requirements" rows="5" placeholder="Please describe your container needs, including size requirements, quantity, duration (for rentals), and any special requirements..." required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            I would like to receive updates about container solutions and industry news
+                        </label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" value="yes" required>
+                            <span class="checkmark"></span>
+                            I agree to the terms and conditions and privacy policy *
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Quote Request
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -178,44 +171,33 @@
     <!-- Service Areas -->
     <section class="service-areas">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Service Areas</h2>
-                <p>We proudly serve businesses and individuals throughout KwaZulu-Natal</p>
-            </div>
+            <h2>Our Service Areas</h2>
+            <p class="section-subtitle">We provide container solutions across KwaZulu-Natal</p>
             <div class="areas-grid">
                 <div class="area-item">
                     <i class="fas fa-map-pin"></i>
-                    <h3>Durban</h3>
-                    <p>Complete container solutions for South Africa's busiest port city</p>
+                    <span>Durban</span>
                 </div>
                 <div class="area-item">
                     <i class="fas fa-map-pin"></i>
-                    <h3>Pinetown</h3>
-                    <p>Our home base - serving the industrial heart of KwaZulu-Natal</p>
+                    <span>Pinetown</span>
                 </div>
                 <div class="area-item">
                     <i class="fas fa-map-pin"></i>
-                    <h3>Pietermaritzburg</h3>
-                    <p>Extending our services to the capital city and surrounding areas</p>
+                    <span>Pietermaritzburg</span>
                 </div>
                 <div class="area-item">
                     <i class="fas fa-map-pin"></i>
-                    <h3>Richards Bay</h3>
-                    <p>Supporting the industrial and port operations in the north</p>
+                    <span>Newcastle</span>
                 </div>
                 <div class="area-item">
                     <i class="fas fa-map-pin"></i>
-                    <h3>Newcastle</h3>
-                    <p>Container solutions for the mining and industrial sectors</p>
+                    <span>Richards Bay</span>
                 </div>
                 <div class="area-item">
                     <i class="fas fa-map-pin"></i>
-                    <h3>Ladysmith</h3>
-                    <p>Reliable container services for the midlands region</p>
+                    <span>Ladysmith</span>
                 </div>
-            </div>
-            <div class="coverage-note">
-                <p><i class="fas fa-info-circle"></i> Don't see your area listed? Contact us - we may still be able to serve your location with our extended delivery network.</p>
             </div>
         </div>
     </section>
@@ -224,15 +206,22 @@
     <section class="emergency-contact">
         <div class="container">
             <div class="emergency-content">
-                <div class="emergency-icon">
-                    <i class="fas fa-exclamation-triangle"></i>
+                <div class="emergency-info">
+                    <h2>Need Immediate Assistance?</h2>
+                    <p>Our emergency response team is available 24/7 for urgent container requirements.</p>
+                    <div class="emergency-details">
+                        <div class="emergency-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Emergency Response</span>
+                        </div>
+                        <div class="emergency-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Same-day delivery available</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="emergency-text">
-                    <h3>Need Emergency Container Services?</h3>
-                    <p>We provide 24/7 emergency container solutions for urgent situations</p>
-                </div>
-                <div class="emergency-action">
-                    <a href="tel:+27123456789" class="btn btn-emergency">
+                <div class="emergency-cta">
+                    <a href="tel:+27317005000" class="btn btn-secondary btn-large">
                         <i class="fas fa-phone"></i>
                         Call Emergency Line
                     </a>
@@ -246,46 +235,46 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>APOGEE</h3>
-                        <span>Container Solutions</span>
-                    </div>
-                    <p>Your trusted partner for comprehensive container solutions in KwaZulu-Natal, South Africa.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    <h3>Apogee Container Solutions</h3>
+                    <p>Your trusted partner for container sales, rentals, and cabotage services in KwaZulu-Natal.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +27 31 700 5000</p>
+                        <p><i class="fas fa-envelope"></i> info@apogeecontainers.co.za</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 15A Truman Road, Pinetown, Durban 3610</p>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="contact.html">Container Sales</a></li>
-                        <li><a href="contact.html">Container Rentals</a></li>
-                        <li><a href="contact.html">Cabotage Services</a></li>
-                        <li><a href="contact.html">Consultation</a></li>
+                        <li><a href="#services">Container Sales</a></li>
+                        <li><a href="#services">Container Rentals</a></li>
+                        <li><a href="#services">Cabotage Services</a></li>
+                        <li><a href="contact.html">Get Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>Durban</li>
+                        <li>Pinetown</li>
+                        <li>Pietermaritzburg</li>
+                        <li>Newcastle</li>
+                        <li>Richards Bay</li>
+                        <li>Ladysmith</li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 15A Truman Road, The Manors<br>Pinetown, Durban 3610<br>KwaZulu-Natal, South Africa</p>
-                        <p><i class="fas fa-phone"></i> +27 (0)31 XXX-XXXX</p>
-                        <p><i class="fas fa-envelope"></i> info@apogeecontainers.co.za</p>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Business Hours</h4>
-                    <div class="hours">
-                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                        <p>Saturday: 8:00 AM - 1:00 PM</p>
-                        <p>Sunday: Closed</p>
-                        <p class="emergency">Emergency services available 24/7</p>
-                    </div>
+                    <ul>
+                        <li>24/7 Emergency Service</li>
+                        <li>2-Hour Response Time</li>
+                        <li>Licensed & Insured</li>
+                        <li>Quality Guaranteed</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Apogee Container Solutions. All rights reserved.</p>
+                <p>&copy; 2024 Apogee Container Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -300,47 +289,102 @@
             navMenu.classList.toggle('active');
         });
 
-        // Form validation and submission
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Form submission handling
         const form = document.querySelector('.quote-form');
         form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Basic form validation
-            const requiredFields = form.querySelectorAll('[required]');
-            let isValid = true;
-            
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.classList.add('error');
-                } else {
-                    field.classList.remove('error');
-                }
-            });
-            
-            if (isValid) {
-                // Show success message (in real implementation, this would submit to server)
-                alert('Thank you for your quote request! We will contact you within 24 hours.');
-                form.reset();
-            } else {
-                alert('Please fill in all required fields.');
-            }
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
         });
     </script>
 </body>
-
 </html>
+<script>
+    window.__lindy_frame_handlers_initialized ||= (() => {
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'navigate') {
+                const { path } = event.data
 
+                const url = new URL(path, window.location.origin)
+
+                window.location.href = url.toString()
+            } else if (event.data.type === 'navigate-back') {
+                window.history.back()
+            } else if (event.data.type === 'navigate-forward') {
+                window.history.forward()
+            } else if (event.data.type === 'reload') {
+                window.location.reload()
+            }
+        })
+
+        let currentHistoryIndex = window.history.length - 1
+
+        function sendNavigationState() {
+            window.parent.postMessage({
+                type: 'navigation-state',
+                state: {
+                    canGoBack: currentHistoryIndex > 0,
+                    canGoForward: currentHistoryIndex < window.history.length - 1,
+                    path: window.location.pathname,
+                    href: window.location.href,
+                    title: document.title,
+                },
+            }, '*')
+        }
+
+        function watchForNavigationChange(currentPath, attempts = 0) {
+            if (attempts > 10) {
+                return
+            }
+
+            if (window.location.pathname === currentPath) {
+                setTimeout(() => watchForNavigationChange(currentPath, attempts + 1), 100)
+            } else {
+                sendNavigationState()
+            }
+        }
+
+        window.addEventListener('popstate', () => {
+            currentHistoryIndex--
+            sendNavigationState()
+        })
+
+        window.history.pushState = new Proxy(window.history.pushState, {
+            apply: (target, thisArg, argArray) => {
+                currentHistoryIndex = window.history.length
+                watchForNavigationChange(window.location.pathname)
+                return target.apply(thisArg, argArray)
+            },
+        })
+
+        window.history.replaceState = new Proxy(window.history.replaceState, {
+            apply: (target, thisArg, argArray) => {
+                currentHistoryIndex = window.history.length
+                watchForNavigationChange(window.location.pathname)
+                return target.apply(thisArg, argArray)
+            },
+        })
+
+        function sendPageLoaded() {
+            window.parent.postMessage({
+                type: 'page-loaded',
+            }, '*')
+        }
+
+        if (document.readyState === 'complete') {
+            sendPageLoaded()
+        } else {
+            window.addEventListener('load', sendPageLoaded)
+        }
+
+        sendNavigationState()
+
+        return true
+    })()
+</script>
