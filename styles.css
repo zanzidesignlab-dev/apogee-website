@@ -1,5 +1,10 @@
 /* Enhanced Styles for Apogee Container Solutions */
+/* offset hero to account for fixed header height */
+:root { --header-height: 72px; } /* adjust if header is taller/shorter */
 
+.hero {
+    padding-top: var(--header-height);
+}
 /* CSS Variables for Brand Colors */
 :root {
     --primary-color: #1B365D;
@@ -1123,4 +1128,5 @@ p {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+
 }
