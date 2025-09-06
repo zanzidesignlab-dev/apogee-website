@@ -10,32 +10,37 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <header class="header">
+    <nav class="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Apogee Container Solutions</h2>
+                <img src="logo.png" alt="Apogee Logo" class="nav-logo-img">
+                <div class="nav-logo-text">
+                    <h1>APOGEE CONTAINER SOLUTIONS</h1>
+                    <div class="nav-subrows">
+                        <div class="nav-services" aria-hidden="true">
+                            <span>SALES</span>
+                            <span>CABOTAGE</span>
+                            <span>RENTALS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link active">Contact</a>
-                </li>
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="contact.html" class="nav-link cta-button">Get Quote</a></li>
             </ul>
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
+</header>
 
     <!-- Contact Hero Section -->
     <section class="contact-hero">
@@ -51,32 +56,31 @@
     <section class="contact-info">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Call Us</h3>
-                    <p>+27 31 700 5000</p>
-                    <p class="contact-note">Available 24/7 for emergencies</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Us</h3>
-                    <p>info@apogeecontainers.co.za</p>
-                    <p class="contact-note">Response within 2 hours</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Visit Us</h3>
-                    <p>15A Truman Road, The Manors</p>
-                    <p>Pinetown, Durban 3610</p>
-                </div>
-            </div>
+    <a class="contact-card-link" href="tel:+27317005000" aria-label="Call Apogee - +27 31 700 5000">
+        <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <h3>Call Us</h3>
+            <span class="sr-only">+27 31 700 5000</span>
         </div>
+    </a>
+
+    <a class="contact-card-link" href="mailto:info@apogeecontainers.co.za" aria-label="Email Apogee - info at apogeecontainers dot co dot za">
+        <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Email Us</h3>
+            <span class="sr-only">info@apogeecontainers.co.za</span>
+        </div>
+    </a>
+
+    <a class="contact-card-link" href="https://www.google.com/maps/search/?api=1&query=15A+Truman+Road+Pinetown+Durban+3610"
+       target="_blank" rel="noopener" aria-label="Visit Apogee at 15A Truman Road, Pinetown, Durban 3610">
+        <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Visit Us</h3>
+            <span class="sr-only">15A Truman Road, The Manors, Pinetown, Durban 3610</span>
+        </div>
+    </a>
+</div>
     </section>
 
     <!-- Quote Request Form -->
@@ -240,7 +244,7 @@
                     <div class="footer-contact">
                         <p><i class="fas fa-phone"></i> +27 31 700 5000</p>
                         <p><i class="fas fa-envelope"></i> info@apogeecontainers.co.za</p>
-                        <p><i class="fas fa-map-marker-alt"></i> 15A Truman Road, Pinetown, Durban 3610</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Admin. Office: 15A Truman Road, Pinetown, Durban 3610</p>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -274,7 +278,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Apogee Container Solutions. All rights reserved.</p>
+                <p>&copy; 2024 Apogee Container Solutions | All rights reserved | Website by <a href="mailto:zanzidesignlab@gmail.com">Zanzi Design Lab</a></p>
             </div>
         </div>
     </footer>

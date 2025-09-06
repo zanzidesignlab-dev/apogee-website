@@ -1,9 +1,8 @@
 /* Enhanced Styles for Apogee Container Solutions */
-/* offset hero to account for fixed header height */
-:root { --header-height: 72px; } /* adjust if header is taller/shorter */
+:root { --header-height: 72px; } /* adjust to match your top card height */
 
-.hero {
-    padding-top: var(--header-height);
+.hero, main {
+  padding-top: var(--header-height);
 }
 /* CSS Variables for Brand Colors */
 :root {
@@ -153,11 +152,67 @@ p {
 .nav-logo span {
     color: var(--secondary-color);
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 700;          /* make bold */
+    text-transform: uppercase; /* force CAPS */
+    letter-spacing: 0.4px;     /* subtle spacing for all-caps */
 }
 
 .nav-logo a {
     text-decoration: none;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 1;
+}
+
+.nav-logo-text h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.6px;
+}
+
+.nav-subtitle {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--secondary-color, #666);
+    letter-spacing: 0.4px;
+    display: block;
+}
+
+/* the three items under the subtitle — spaced and bold */
+.nav-services {
+    display: flex;
+    gap: 18px;                 /* spacing between words, adjust to taste */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--secondary-color, #666);
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* make it look better on small screens */
+@media (max-width: 640px) {
+    .nav-logo-text h1 { font-size: 1rem; }
+    .nav-subtitle { font-size: 0.75rem; }
+    .nav-services { gap: 10px; font-size: 0.65rem; }
+}
+
+.nav-logo-img {
+    width: 76px;   /* adjust as needed */
+    height: 76px;  /* adjust as needed */
+    object-fit: contain;
+    display: block;
 }
 
 .nav-menu {
@@ -1128,5 +1183,36 @@ p {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+/* make whole contact card clickable and keep hidden details for screen readers */
+.contact-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
 
+.contact-card-link:focus-visible {
+    outline: 3px solid rgba(21, 156, 228, 0.6); /* accessible focus ring */
+    outline-offset: 4px;
+}
+
+.contact-card {
+    /* existing card styles will still apply; ensure pointer shows clickable */
+    cursor: pointer;
+}
+
+/* visually hide the phone/email/address but keep for screen readers */
+.sr-only {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0);
+    white-space: nowrap; border: 0;
+}
+
+/* optional hover effect to show affordance */
+.contact-card-link:hover .contact-card,
+.contact-card-link:focus .contact-card {
+    transform: translateY(-3px);
+    transition: transform 150ms ease;
 }
